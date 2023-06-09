@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+
+
+
+main section {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif, arial;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #C85CFA;
+    opacity: 90%;
+}
+
+
+nav a:hover {
+    background-color: #8A52DE;
+    color: white;
+}
+
+
+
+
+.home-title {
+    color: white;
+    font-family: 'Libre Baskerville', serif, arial;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+h5 {
+    font-size: 70px;
+}
+h1 {
+    font-size: 70px;
+}
+h4 {
+    color: white;
+}
+
+
+footer {
+    background-color: #8A52DE;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+
+
+main section img {
+    box-sizing: border-box;
+}
+
+/* Grid */
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+
+img {
+    transition: all 0.5s;
+}
+
+map {
+    margin-top: -50px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    opacity: 40%;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+
+
+.rivers-title {
+    text-align: center;
+}
+
+.rivers-article1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.river1{
+    width: 85%;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    margin: auto;
+}
+
+.river1-text{
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+.rivers-article2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.river2{
+    width: 95%;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    margin: auto;
+}
+
+.river2-text{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    margin-top: 30px;
+}
+
+
+.rivers-article3{
+    text-align: center;
+    padding: 0 50px;
+}
+
+
+.river3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
